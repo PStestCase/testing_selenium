@@ -8,6 +8,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginUsingSelenium {
+    WebDriver driver = null;
+    WebDriverManager.chromedriver().version("83.0.4103.39").setup();
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("start-maximized"); 
+    options.addArguments("enable-automation"); 
+    options.addArguments("--no-sandbox"); 
+    options.addArguments("--disable-infobars");
+    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--disable-browser-side-navigation"); 
+    options.addArguments("--disable-gpu"); 
 
     @Test
     public void login() {
