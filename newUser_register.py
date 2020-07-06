@@ -11,7 +11,7 @@ firstName = "ADRIANE"
 lastName = "JENKINS"
 accountNumber = "6578147209"
 
-driver.implicitly_wait(8)
+driver.implicitly_wait(10)
 element = driver.find_element_by_id("txtFirstName")
 element.send_keys(firstName)
 element = driver.find_element_by_id("txtLastName")
@@ -26,7 +26,7 @@ userName="dtolia6578"
 password = "test1234"
 cPassword = "test1234"
 
-driver.implicitly_wait(6)
+driver.implicitly_wait(10)
 element = driver.find_element_by_id("txtEmail")
 element.send_keys(email)
 element = driver.find_element_by_id("txtConfirmEmail")
